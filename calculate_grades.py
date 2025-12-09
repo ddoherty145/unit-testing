@@ -38,4 +38,6 @@ def print_stat(mean, sd):
     print('The population standard deviation of grades is: ', round(sd, 3))
     print('****** END ******')
 
-display_grade_stat()
+# FIXED: Only run when executed directly, not when imported for testing
+if __name__ == "__main__":
+    display_grade_stat()
